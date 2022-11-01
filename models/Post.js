@@ -4,10 +4,8 @@ const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({
   user: {
-    user: {
-      type: Schema.Types.ObjectId,
-      ref: 'user',
-    },
+    type: Schema.Types.ObjectId,
+    ref: 'user',
   },
   text: {
     type: String,
